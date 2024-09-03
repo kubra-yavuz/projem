@@ -1,1 +1,0 @@
-# GitHub Bağlantım Başarılı
