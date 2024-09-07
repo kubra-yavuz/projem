@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      h1 {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+      }
+      .favori {
+        border-left: 10px solid #007aff;
+      }
+
+      #memleket {
+        text-align: center;
+      }
+
+      #memleket::after {
+        content: "(OTOPARK)";
+        font-weight: bold;
+      }
+      div > p {
+        margin: 0 70px;
+        text-align: justify;
+        font-size: 80%;
+      }
+
+      div p {
+        font-family: "Comic Sans MS";
+      }
+
+      h1,
+      h2 {
+        background-color: rgb(213, 213, 226);
+        color: #007aff;
+      }
+      [title] {
+        background-color: yellow;
+      }
+
+      li[title] {
+        font-style: italic;
+      }
+
+      h2 + p {
+        text-indent: 40px;
+      }
+
+      li:nth-child(2n + 1) {
+        background-color: bisque;
+      }
+
+      li:nth-child(6) {
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px rgb(145, 135, 135);
+        color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Turkiye</h1>
+    <h2>Kütahya</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero expedita
+      iste magnam dignissimos quia, repudiandae earum nemo nisi. Magni, animi
+      tempore. Itaque sint voluptate rem? Ipsa aut natus accusantium officiis.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quam, odio
+      reiciendis dolorum autem provident numquam laborum dolorem aut, cumque
+      laudantium sit veritatis natus, sunt quos! Consequatur dolorum fugit
+      tempore.
+    </p>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+        impedit!
+      </p>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, at!
+        </p>
+      </section>
+    </div>
+    <h3>İlçeleri</h3>
+    <ul>
+      <li>Merkez</li>
+      <li>Altıntaş</li>
+      <li>Aslanapa</li>
+      <li title="Dikkat ayı çıkabilir! ">Çavdarhisar</li>
+      <li class="favori">Domaniç</li>
+      <li>Dumlupınar</li>
+      <li class="favori">Emet</li>
+      <li>Gediz</li>
+      <li>Hisarcık</li>
+      <li>Pazarlar</li>
+      <li>Simav</li>
+      <li>Şaphane</li>
+      <li id="memleket" class="favori">Tavşanlı</li>
+    </ul>
+  </body>
+</html>
