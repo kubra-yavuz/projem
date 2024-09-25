@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript giriş 2</h1>
+    <p>bir html dökümanında JS'i 3 farklı şekilde dökümana dahil edebiliriz.</p>
+    <!--A) script tagları arasında -->
+    <script>
+      let sonuc = 2 + 2;
+      document.write("<hr>");
+      document.write("4");
+    </script>
+    <!--B) harici dosya -->
+    <script src="kod.js"></script>
+    <hr />
+    <!--c) Inline Javascript-->
+    <button onclick="alert('Başın göğe erdi mi?')">BANA TIKLAMA</button>
+    <hr />
+    <button
+      id="minnos"
+      onmouseenter="document.getElementById('minnos').textContent ='şaka yaptım :))'"
+    >
+      ÜZERİME GELMEYİN BURAYI TERK EDERİM
+    </button>
+  </body>
+</html>

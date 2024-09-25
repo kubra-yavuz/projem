@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tıkladıkça Büyüyen Kutu</title>
+    <style>
+      #kutu {
+        background-color: black;
+        color: aliceblue;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        font-weight: bold;
+        cursor: crosshair;
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="kutu">100</div>
+    <script>
+      let k = document.getElementById("kutu");
+      let x = 100;
+      function Yap() {
+        x = x + 1;
+        k.textContent = x;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1>Javascript Öğreniyorum</h1>
+    <p></p>
+    <script>
+      //dom ağacı document object model (dökümanın nesne modeli)
+      //javasc//document nesnesi üzerinden mevcut sayfadaki dökümanın tüm elementlerine erişebiliriz(belirli yöntemlerle)
+      //sayfadaki ilk p elementinin eriş ve içindeki metni değiştir
+
+      // progrmalama:
+      // Komutların belli sırada belirli bir amaç içn çalıştırılması(algoritma ile)
+      //KOMUTLAR insan diline yakın bir dille bilgisayara iş yapması için fısıldamaktır.
+      //burası javascript bölgesi
+      //komutlar sırayla çalışır burada
+      //alert("Hooooppp....palaaaaaa");
+      //alert("Hoşgeldin :)");
+
+      let ilkParag = document.querySelector("p");
+      ilkParag.textContent =
+        "biz kimseyi yarı yolda bırakmadık onlar müsait yerde indiler. -- Bir kamyon arka sözü";
+      ilkParag.style.color = "purple";
+      document.body.style.background = "linear-gradient(to right,orange,white)";
+    </script>
+  </body>
+</html>
